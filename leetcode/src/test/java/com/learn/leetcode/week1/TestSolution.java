@@ -1,6 +1,7 @@
 package com.learn.leetcode.week1;
 
 import com.learn.leetcode.Tool;
+import com.learn.leetcode.week1.struct.ListNode;
 import org.junit.Test;
 
 public class TestSolution {
@@ -40,5 +41,36 @@ public class TestSolution {
         System.out.println(SolutionRomanToInt.romanToInt("IX"));
         System.out.println(SolutionRomanToInt.romanToInt("LVIII"));
         System.out.println(SolutionRomanToInt.romanToInt("MCMXCIV"));
+    }
+
+    @Test
+    public void testLongestCommonPrefix(){
+        String[] s1 = {"flower","flow","flight"};
+        String[] s2 = {"dog","racecar","car"};
+        System.out.println(SolutionLongestCommonPrefix.longestCommonPrefix(s1));
+        System.out.println(SolutionLongestCommonPrefix.longestCommonPrefix(s2));
+    }
+
+    @Test
+    public void testIsBracketValid(){
+        String s1 = "{[]}";
+        String s2 = "([)]";
+        System.out.println(SolutionIsBracketValid.isValid(s1));
+        System.out.println(SolutionIsBracketValid.isValid(s2));
+    }
+
+    @Test
+    public void testListCombine(){
+        ListNode l1 = new ListNode(1,new ListNode(2,new ListNode(4)));
+        ListNode l2 = new ListNode(1,new ListNode(3,new ListNode(4)));
+        ListNode head = SolutionListCombine.mergeTwoLists(l1,l2);
+        SolutionListCombine.printList(head);
+    }
+
+    @Test
+    public void testRemoveDuplicates(){
+        int[] nums = {0,0,1,1,1,2,2,3,3,4,4};
+        System.out.println(SolutionRemoveDuplicates.removeDuplicates(nums));
+        Tool.printArray(nums);
     }
 }
