@@ -73,4 +73,30 @@ public class TestSolution {
         System.out.println(SolutionRemoveDuplicates.removeDuplicates(nums));
         Tool.printArray(nums);
     }
+
+    @Test
+    public void testRemoveElement(){
+        int[] nums = {0,1,2,2,3,0,4,2};
+        System.out.println(SolutionRemoveElement.removeElement(nums,2));
+        Tool.printArray(nums);
+    }
+
+    @Test
+    public void testStrStr(){
+        System.out.println(SolutionStrStr.strStr("hello","ll"));
+        System.out.println(SolutionStrStr.strStr("aaaaa","bba"));
+    }
+
+    @Test
+    public void testSearchInsert(){
+        int[] nums1 = {1,3,5,6};
+        int[] nums2 = {1,3,5,6};
+        System.out.println(SolutionSearchInsert.searchInsert(nums1,0));
+        System.out.println(SolutionSearchInsert.searchInsert(nums2,2));
+    }
+
+    @Test
+    public void testCountAndSay(){
+        System.out.println(SolutionCountAndSay.countAndSay(5));
+    }
 }
