@@ -3,7 +3,9 @@ package com.learn.leetcode.week2;
 import com.learn.leetcode.Tool;
 import com.learn.leetcode.week1.SolutionListCombine;
 import com.learn.leetcode.week1.struct.ListNode;
+import com.learn.leetcode.week2.struct.TreeNode;
 import org.junit.Test;
+import sun.reflect.generics.tree.Tree;
 
 public class TestSolution {
     @Test
@@ -50,5 +52,33 @@ public class TestSolution {
         int[] nums2 = {2,5,6};
         SolutionMerge.merge(nums1,3,nums2,nums2.length);
         Tool.printArray(nums1);
+    }
+
+    @Test
+    public void testIsSameTree(){
+        TreeNode t1 = new TreeNode(1,new TreeNode(2),new TreeNode(3));
+        TreeNode t2 = new TreeNode(1,new TreeNode(2),new TreeNode(3));
+        System.out.println(SolutionIsSameTree.isSameTree(t1,t2));
+    }
+
+    @Test
+    public void testIsSymmetricTree(){
+        TreeNode t1 = new TreeNode(1,new TreeNode(2,new TreeNode(3),new TreeNode(4)),
+                new TreeNode(2,new TreeNode(4),new TreeNode(3)));
+        System.out.println(SolutionIsSymmetricTree.isSymmetric(t1));
+    }
+
+    @Test
+    public void testMaxDepth(){
+        TreeNode t1 = new TreeNode(1,new TreeNode(2,new TreeNode(3),new TreeNode(4)),
+                new TreeNode(2,new TreeNode(4),new TreeNode(3)));
+        System.out.println(SolutionMaxDepth.maxDepth(t1));
+    }
+
+    @Test
+    public void testLevelOrderBottom(){
+        TreeNode t1 = new TreeNode(1,new TreeNode(2,new TreeNode(3),new TreeNode(4)),
+                new TreeNode(2,new TreeNode(4),new TreeNode(3)));
+        System.out.println(SolutionLevelOrderBottom.levelOrderBottom(t1));
     }
 }
