@@ -81,4 +81,22 @@ public class TestSolution {
                 new TreeNode(2,new TreeNode(4),new TreeNode(3)));
         System.out.println(SolutionLevelOrderBottom.levelOrderBottom(t1));
     }
+
+    @Test
+    public void testSortedArrayToBST(){
+        int[] arr = {-10,-3,0,5,9};
+    }
+    // [1,2,2,3,null,null,3,4,null,null,4]
+    @Test
+    public void testIsBalanced(){
+        TreeNode t1 = new TreeNode(1,new TreeNode(2,new TreeNode(3),new TreeNode(4)),
+                new TreeNode(3,new TreeNode(4),new TreeNode(3)));
+        System.out.println(SolutionIsBalanced.isBalanced(t1));
+    }
+
+    @Test
+    public void testMinDepth(){
+
+    }
+
 }
