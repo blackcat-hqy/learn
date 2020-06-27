@@ -99,4 +99,23 @@ public class TestSolution {
 
     }
 
+    @Test
+    public void testTriangleGenerate(){
+        System.out.println(SolutionTriangleGenerate.generate(5));
+    }
+
+    @Test
+    public void testTriangleGetRow(){
+        System.out.println(SolutionTriangleGetRow.getRow(3));
+    }
+
+    @Test
+    public void testMaxProfit(){
+        int[] prices = {7,6,4,3,1};
+        System.out.println(SolutionMaxProfit.maxProfit(prices));
+        int[] prices1 = {1,2,3,4,5};
+        System.out.println(SolutionMaxProfit.maxProfit1(prices1));
+    }
+
+
 }
