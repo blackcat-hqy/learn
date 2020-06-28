@@ -117,5 +117,26 @@ public class TestSolution {
         System.out.println(SolutionMaxProfit.maxProfit1(prices1));
     }
 
+    @Test
+    public void testPalindrome(){
+        String s = "A man, a plan, a canal: Panama";
+        System.out.println(SolutionIsPalindrome.isPalindrome(s));
+        System.out.println(SolutionIsPalindrome.isPalindrome("./"));
+    }
 
+    @Test
+    public void testSingleNumber(){
+        int[] nums = {4,1,2,1,2};
+        System.out.println(SolutionSingleNumber.singleNumber(nums));
+    }
+
+    @Test
+    public void testHasCycle(){
+
+    }
+
+    @Test
+    public void testMinStack(){
+
+    }
 }
