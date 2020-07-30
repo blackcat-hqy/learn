@@ -1,6 +1,8 @@
 package com.learn.leetcode.week3;
 
 import com.learn.leetcode.Tool;
+import com.learn.leetcode.week1.SolutionRemoveElement;
+import com.learn.leetcode.week1.struct.ListNode;
 import org.junit.Test;
 
 public class TestSolution {
@@ -45,5 +47,28 @@ public class TestSolution {
     @Test
     public void testReverseBits(){
         System.out.println(SolutionReverseBits.reverseBits(43261596));
+    }
+
+    @Test
+    public void testHammingWeight(){
+        System.out.println(SolutionHammingWeight.hammingWeight(3));
+    }
+
+    @Test
+    public void testRob(){
+        int[] nums = {2,7,9,3,1};
+        System.out.println(SolutionRob.rob(nums));
+    }
+
+    @Test
+    public void testHappy(){
+        System.out.println(SolutionHappy.isHappy(19));
+    }
+
+    @Test
+    public void testRemoveElement(){
+        ListNode head = new ListNode(1,new ListNode(1));
+        ListNode node = SolutionRemoveElements.removeElements(head,1);
+
     }
 }
