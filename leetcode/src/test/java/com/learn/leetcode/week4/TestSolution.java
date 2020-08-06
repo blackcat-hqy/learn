@@ -40,4 +40,10 @@ public class TestSolution {
         myQueue.push(2);
         myQueue.push(3);
     }
+
+    @Test
+    public void testMinCostClimbingStairs(){
+        int[] cost = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
+        System.out.println(SolutionMinCostClimbingStairs.minCostClimbingStairs(cost));
+    }
 }
